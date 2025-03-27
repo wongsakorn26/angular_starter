@@ -1,3 +1,11 @@
+<nav>
+    <ul>
+        <li><a routerLink="/dashboard">Dashboard</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><button (click)="changeLanguage('en')">EN</button></li>
+        <li><button (click)="changeLanguage('th')">TH</button></li>
+    </ul>
+</nav>
 <h1>{{ 'HELLO' | translate }}</h1>
-<button (click)="changeLanguage('en')">EN</button>
-<button (click)="changeLanguage('th')">TH</button>
+
+<router-outlet></router-outlet>
