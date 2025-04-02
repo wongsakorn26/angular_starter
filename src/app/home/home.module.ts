@@ -4,10 +4,6 @@ import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-    declarations: [HomeComponent],
-    imports: [
-        CommonModule,
-        RouterModule.forChild([{ path: '', component: HomeComponent }]) // Set the default route
-    ]
+
 })
 export class HomeModule { }

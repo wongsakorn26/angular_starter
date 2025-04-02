@@ -1,4 +1,19 @@
 {
     "HELLO": "สวัสดี",
-    "WELCOME": "ยินดีต้อนรับสู่เว็บไซต์ของเรา"
+    "WELCOME": "ยินดีต้อนรับสู่เว็บไซต์ของเรา",
+    "APP_TITLE": "Angular App",
+    "NAV": {
+        "HOME": "หน้าหลัก",
+        "ABOUT": "เกี่ยวกับเรา"
+    },
+    "HOME": {
+        "TITLE": "ยินดีต้อนรับสู่ Angular App",
+        "DESCRIPTION": "เว็บไซต์หน้าหลักของเรา",
+        "EXPLORE_BUTTON": "อ่านเพิ่มเติม"
+    },
+    "ABOUT": {
+        "TITLE": "เกี่ยวกับเรา",
+        "DESCRIPTION": "เราคือทีมที่จัดทําแอพพลิเคชัน Angular ที่มีการรองรับภาษาหลายภาษา",
+        "CONTACT_INFO": "ติดต่อเราที่: example@angular-app.com"
+    }
 }

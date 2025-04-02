@@ -1,4 +1,19 @@
 {
     "HELLO": "Hello",
-    "WELCOME": "Welcome to our website"
+    "WELCOME": "Welcome to our website",
+    "APP_TITLE": "Angular App",
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT": "About"
+    },
+    "HOME": {
+        "TITLE": "Welcome to our Angular App",
+        "DESCRIPTION": "This is the homepage of our multilingual application.",
+        "EXPLORE_BUTTON": "Explore More"
+    },
+    "ABOUT": {
+        "TITLE": "About Us",
+        "DESCRIPTION": "We are a team dedicated to creating amazing Angular applications with multilingual support.",
+        "CONTACT_INFO": "Contact us at: example@angular-app.com"
+    }
 }

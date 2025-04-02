@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,13 +9,20 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'angular_starter';
-  constructor(private translateService: TranslateService) {
-    const userLang = navigator.language || 'en'
-    const language = userLang.split('-')[0]
-    this.translateService.setDefaultLang(language)
-    this.translateService.use(language)
+
+  constructor(public translate: TranslateService) {
+    // Add languages
+    translate.addLangs(['en', 'th']);
+
+    // Set default language
+    translate.setDefaultLang('en');
+
+    // Use browser language if available, otherwise use English
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|th/) ? browserLang : 'en');
   }
-  changeLanguage(lang: string) {
-    this.translateService.use(lang)
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
   }
 }

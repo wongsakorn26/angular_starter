@@ -1,11 +1,17 @@
-<nav>
-    <ul>
-        <li><a routerLink="/dashboard">Dashboard</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><button (click)="changeLanguage('en')">EN</button></li>
-        <li><button (click)="changeLanguage('th')">TH</button></li>
-    </ul>
+<nav class="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">{{ 'APP_TITLE' | translate }}</a>
+        <ul class="nav-links">
+            <li><a routerLink="/home" routerLinkActive="active">{{ 'NAV.HOME' | translate }}</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">{{ 'NAV.ABOUT' | translate }}</a></li>
+            <li class="language-selector">
+                <button (click)="switchLanguage('en')" [class.active]="translate.currentLang === 'en'">EN</button>
+                <button (click)="switchLanguage('th')" [class.active]="translate.currentLang === 'th'">TH</button>
+            </li>
+        </ul>
+    </div>
 </nav>
-<h1>{{ 'HELLO' | translate }}</h1>
 
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
